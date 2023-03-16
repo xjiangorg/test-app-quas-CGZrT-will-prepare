@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-ikxx
+  namespace: build-e2e-sytf-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:5087c5b29557bab101915e5f4dc9ac2b4a8a62844040c3e06a6a6826bfe493ce
+        name: my-python
+        resources: {}
+status: {}
